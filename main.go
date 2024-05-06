@@ -11,22 +11,15 @@ func main() {
 	PrintRune(q)
 }
 func Atoi(str string) int {
-	// var charInteger int
-	// result := 0
-	// for _, char := range str {
-	// 	charInteger = int(char - '0')
-	// 	result = result*10 + charInteger
+	var charInteger int
+	result := 0
+	for _, char := range str {
+		charInteger = int(char - '0')
+		result = result*10 + charInteger
 
-	// }
-	// return result
-	var num int
-	for _, v := range str {
-		if v < '0' || v > '9' {
-			return 0
-		}
-		num = num*10 + (int(v) - 48)
 	}
-	return num
+	return result
+
 }
 func Max(s []string) int {
 	var result []int
