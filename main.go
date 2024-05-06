@@ -5,8 +5,8 @@ import (
 )
 
 func main() {
-	s := []string{"200", "400", "150", "355", "60", "10"}
-	r := Max(s)
+	sr := []string{"200", "400", "150", "355", "60", "10"}
+	r := Max(sr)
 	q := Itoa(r)
 	PrintRune(q)
 }
